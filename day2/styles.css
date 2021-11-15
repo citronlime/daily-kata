@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --clr-primary: #060a2f;
+  --clr-accent: #5f67ff;
+  --clr-light: #ffffff;
+  --height-header: 80px;
+  --height-menu: 100px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5em;
+  background-color: var(--clr-primary);
+  height: var(--height-header);
+  align-items: center;
+}
+nav {
+  position: fixed;
+  left: 0;
+  top: var(--height-header);
+  height: var(--height-menu);
+  width: 100%;
+  background-color: var(--clr-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  display: none;
+}
+ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  background-color: var(--clr-primary);
+  list-style: none;
+  padding: 0 1.5em;
+
+  justify-content: space-between;
+}
+li {
+}
+li a {
+  text-decoration: none;
+  color: var(--clr-light);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+li a:hover,
+li a:focus {
+  color: var(--clr-accent);
+}
+
+/*HAMBURGER STYLES*/
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+.nav-toggle:checked ~ label span {
+  transform: rotate(45deg);
+  transition: all ease 500ms;
+}
+.nav-toggle:checked ~ label span::before {
+  display: none;
+}
+.nav-toggle:checked ~ label span::after {
+  transform: rotate(90deg);
+  transition: all ease 500ms;
+}
+
+.nav-toggle {
+  position: absolute;
+  right: 2em;
+  height: 5px;
+  width: 5px;
+  display: none;
+  cursor: pointer;
+}
+.nav-toggle-label {
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::after,
+.nav-toggle-label span::before {
+  display: block;
+  background-color: var(--clr-accent);
+  /*color: var(--clr-accent);*/
+  width: 36px;
+  height: 3px;
+  position: relative;
+}
+
+.nav-toggle-label span::after,
+.nav-toggle-label span::before {
+  content: "";
+  position: absolute;
+}
+.nav-toggle-label span::after {
+  transform: translateY(-10px);
+
+  /* top: 10px;*/
+}
+.nav-toggle-label span::before {
+  transform: translateY(10px);
+  /*bottom: 10px;*/
+}
+@media (min-width: 650px) {
+  nav {
+    all: unset;
+    width: 600px;
+    max-width: 600px;
+    height: var(--height-header);
+  }
+  ul {
+    width: 100%;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+}
+
+/*FOR THE WIDTH DISPLAY*/
+.width-container {
+  display: none;
+}
+
+.display-width {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 80px;
+  width: 5vw;
+  height: 20px;
+  background: #eeeeee;
+  outline: 2px solid #000000;
+
+  padding: 0.3em;
+  font-size: 0.85em;
+  z-index: 100;
+}
