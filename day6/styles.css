@@ -147,7 +147,7 @@ ul li a:focus {
     top: 0;
     left: 0;
     background-color: white;
-    width: 60vw;
+    width: 40vw;
     height: 100vh;
   }
   .active {
@@ -185,7 +185,7 @@ ul li a:focus {
   .close {
     position: absolute;
     top: -40px;
-    right: -60px;
+    left: 20vw;
     cursor: pointer;
   }
 
@@ -224,6 +224,12 @@ ul li a:focus {
   .sub-nav-mobile-links li {
     margin-top: 30px;
   }
+  .sub-nav-mobile-links li:nth-of-type(1) {
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+  }
 
   .sub-nav-mobile-links a,
   .sub-nav-mobile-search {
@@ -231,15 +237,20 @@ ul li a:focus {
     font-size: 18px;
     text-transform: uppercase;
   }
-  a.sub-nav-mobile-search {
+
+  .sub-nav-mobile-search {
     display: block;
-    margin-top: 10px;
+    margin-top: 30px;
     position: relative;
+    left: -20px;
+    top: -5px;
+    height: auto;
   }
   .sub-nav-mobile-search img {
     position: absolute;
-    top: -10px;
-    left: -45px;
+    height: 36px;
+    left: -10px;
+    top: 100px;
   }
 }
 
