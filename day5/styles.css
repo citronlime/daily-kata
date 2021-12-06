@@ -41,18 +41,14 @@ header {
   width: 100%;
 }
 .burger.open span {
-  
 }
 .burger.open span:nth-of-type(1) {
-  
   display: none;
 }
 .burger.open span:nth-of-type(2) {
-  
   transform: rotate(45deg) translate(13px, 13px);
 }
 .burger.open span:nth-of-type(3) {
-  
   transform: rotate(-45deg);
 }
 nav {
@@ -85,7 +81,6 @@ nav ul li:hover {
 @media (min-width: 650px) {
   header {
     flex-direction: row;
-    
   }
   nav,
   nav ul {
@@ -103,8 +98,8 @@ nav ul li:hover {
   }
   nav ul li {
     padding: 0;
-    padding: .5em;
-    m0;
+    padding: 0.5em;
+    margin: 0;
     margin-right: 1em;
   }
   .burger {
