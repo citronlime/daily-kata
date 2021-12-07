@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  justify-content: center;
+  background: linear-gradient(
+    304deg,
+    rgba(104, 29, 253, 1) 0%,
+    rgba(141, 0, 222, 1) 100%
+  );
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(
+    5,
+    min-content
+  ); /*fix for not stretching in chrome*/
+  margin-top: 3em;
+}
+.card {
+  background: white;
+  background: linear-gradient(
+    137deg,
+    rgba(255, 255, 255, 1) 43%,
+    rgba(160, 135, 255, 1) 100%
+  );
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  margin: 1.5em;
+  padding: 1.5em;
+  border-radius: 1em;
+  text-align: center;
+  color: #15004c;
+  position: relative;
+}
+span {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  margin-top: -3em;
+  border-radius: 50%;
+  background-color: #e6c9ff;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+p {
+  margin-top: 2em;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+a {
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  margin-top: 1em;
+}
