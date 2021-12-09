@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata day 9</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-secondary.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <span id="window-width" class="width-container"></span>
+    <div class="wrapper">
+        <h1>Become a Member!</h1>
+        <ul class="progress">
+            <li>
+                <a href="index.html">
+                    <div class="circle">1</div>
+                    <span>Account</span>
+                </a>
+            </li>
+            <li>
+                <a href="step2.html">
+                    <div class="circle">2</div>
+                    <span>Deatils</span>
+                </a>
+            </li>
+            <li class="current">
+                <a href="step3.html">
+                    <div class="circle">3</div>
+                    <span>Confirmation</span>
+                </a>
+            </li>
+        </ul>
+        <main>
+            <div class="col-left">
+                <h2>Confirmation</h2>
+                <label for="tos" class="mt-extra">Terms of Service</label>
+                <textarea id="tos"
+                    class="extra-height">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit voluptatem fugit odit esse veritatis repellendus rem vel voluptatum, provident eaque minus corporis totam illo vero. Dolore quaerat beatae nesciunt vitae?</textarea>
+                <input type="checkbox" name="cb" id="cb">
+                <label for="cb" id="checkbox" class="left-col">
+                    <svg viewBox="0 0 100 100">
+                        <path class="box"
+                            d="M82,89H18c-3.87,0-7-3.13-7-7V18c0-3.87,3.13-7,7-7h64c3.87,0,7,3.13,7,7v64C89,85.87,85.87,89,82,89z" />
+                        <polyline class="check" points="25.5,53.5 39.5,67.5 72.5,34.5 " />
+                    </svg>
+                    <span>I agree to the terms of Service</span></label>
+
+                <a class="cta" href="step3.html">Complete Signup</a>
+            </div>
+            <div class="col-right">
+                <p><strong>Note: </strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt esse amet
+                    assumenda qui molestias? Aliquam, excepturi commodi ipsam sint incidunt minima nesciunt ut officiis
+                    libero veritatis facere fugiat adipisci hic!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rerum nulla assumenda harum hic dolorum
+                    quis consequuntur, laboriosam sunt ex debitis blanditiis voluptates officia ad recusandae, similique
+                    dolores tempore incidunt?</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

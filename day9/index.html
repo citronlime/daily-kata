@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata day 9</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <span id="window-width" class="width-container"></span>
+    <div class="wrapper">
+        <h1>Become a Member!</h1>
+        <ul class="progress">
+            <li class="current">
+                <a href="index.html">
+                    <div class="circle">1</div>
+                    <span>Account</span>
+                </a>
+            </li>
+            <li>
+                <a href="step2.html">
+                    <div class="circle">2</div>
+                    <span>Deatils</span>
+                </a>
+            </li>
+            <li>
+                <a href="step3.html">
+                    <div class="circle">3</div>
+                    <span>Confirmation</span>
+                </a>
+            </li>
+        </ul>
+        <main>
+            <div class="col-left">
+                <h2>Account Setup</h2>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" class="error-field">
+                <p class="error">Sorry, this field is required.</p>
+
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname">
+
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email">
+
+                <a class="cta" href="step2.html">Next</a>
+            </div>
+            <div class="col-right">
+                <p><strong>Note: </strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt esse amet
+                    assumenda qui molestias? Aliquam, excepturi commodi ipsam sint incidunt minima nesciunt ut officiis
+                    libero veritatis facere fugiat adipisci hic!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rerum nulla assumenda harum hic dolorum
+                    quis consequuntur, laboriosam sunt ex debitis blanditiis voluptates officia ad recusandae, similique
+                    dolores tempore incidunt?</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

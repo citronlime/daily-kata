@@ -8,3 +8,23 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+/*FOR THE WIDTH DISPLAY*/
+.width-container {
+  display: none;
+}
+
+.display-width {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  width: 5vw;
+  height: 20px;
+  background: #eeeeee;
+  outline: 2px solid #000000;
+
+  padding: 0.3em;
+  font-size: 0.85em;
+  z-index: 100;
+}
